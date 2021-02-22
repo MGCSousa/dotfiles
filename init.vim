@@ -29,32 +29,32 @@ nmap <Leader>q :bdelete<CR> " close current buffer
 
 " Splits
 map <Tab> <C-W>w            " change split pane
-noremap <Leader>v :vnew<CR>	" new vertical split
-noremap <Leader>h :new<CR>	" new horizontal split
+noremap <Leader>v :vnew<CR> " new vertical split
+noremap <Leader>h :new<CR>  " new horizontal split
 
 " extra options in GUI mode
 if has("gui_running")
-	set guioptions-=m
-	set guioptions-=T
-	set guioptions-=r
-	set guifont=JetBrains\ Mono\ Regular:h14
-	set guicursor=n-v-c:block-Cursor
-	set guicursor+=i:ver100-iCursor
-	set guicursor+=n-v-c:blinkoff0
-	set guitablabel=%N:\ %f
+    set guioptions-=m
+    set guioptions-=T
+    set guioptions-=r
+    set guifont=JetBrains\ Mono\ Regular:h14
+    set guicursor=n-v-c:block-Cursor
+    set guicursor+=i:ver100-iCursor
+    set guicursor+=n-v-c:blinkoff0
+    set guitablabel=%N:\ %f
 endif
 
 
 " =========================== Plugins & Configuration ===========================
 call plug#begin('~/.vim/plugged')
-	Plug 'morhetz/gruvbox'
+    Plug 'morhetz/gruvbox'
     Plug 'tpope/vim-surround'
     Plug 'itchyny/lightline.vim'
     Plug 'mengelbrecht/lightline-bufferline'
-	Plug 'pangloss/vim-javascript'
+    Plug 'pangloss/vim-javascript'
     Plug 'dylon/vim-antlr'
-	Plug 'preservim/nerdtree'
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'preservim/nerdtree'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 "" morhetz/gruvbox
