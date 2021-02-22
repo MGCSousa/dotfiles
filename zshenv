@@ -3,7 +3,8 @@
 # ------------------------------------------- #
 
 # default programs
-export EDITOR="vim"
+export EDITOR="nvim"
+export TERMINAL="alacritty"
 
 # path variables
-export PATH="$HOME/.scripts:$PATH"
+export PATH="$PATH:$HOME/.scripts"

@@ -1,0 +1,61 @@
+window:
+  padding:
+    x: 3
+    y: 5
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+  size: 13
+  offset:
+    x: 0
+    y: 2
+  use_thin_strokes: true
+  debug:
+    persistent_logging: false
+
+options:
+  antialias: lcd
+
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '#1c1c1c'
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style: Block
+
+shell:
+  program: /usr/bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux"
+
+# Mostly used to manipulate tmux keystrokes.
+key_bindings:
+  # Create a new tmux window.
+  - { key: T, mods: Control, chars: "\x02\x63" }
+  # Kill a tmux window
+  - { key: W, mods: Control, chars: "\x02\x26" }
+  # Move to window number
+  - { key: Key1, mods: Alt, chars: "\x02\x31" }
+  - { key: Key2, mods: Alt, chars: "\x02\x32" }
+  - { key: Key3, mods: Alt, chars: "\x02\x33" }
+  - { key: Key4, mods: Alt, chars: "\x02\x34" }
+  - { key: Key5, mods: Alt, chars: "\x02\x35" }
+  - { key: Key6, mods: Alt, chars: "\x02\x36" }
+  - { key: Key7, mods: Alt, chars: "\x02\x37" }
+  - { key: Key8, mods: Alt, chars: "\x02\x38" }
+  - { key: Key9, mods: Alt, chars: "\x02\x39" }
